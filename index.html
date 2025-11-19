@@ -49,6 +49,200 @@
                 <i>Our <strong>3DEditFormer</strong>, a 3D-structure-preserving conditional transformer. By enhancing image-to-3D generation with dual-guidance attention and time-adaptive gating, 3DEditFormer disentangles editable regions from preserved structure, enabling precise and consistent edits <strong>without requiring auxiliary 3D masks</strong>.</i>
             </p>
             
+            <!-- Non-Human Pose Editing -->
+            <div class="x-section-title"><div class="x-gradient-font">3DEditFormer <span style="font-size: 40px; font-weight:600;">|</span> Non-Human Pose Editing</div></div>
+            
+            <p>
+                * From left to right: (1) Source Voxel (Input), (2) Source 3D (Input), (3) Target Image (Input), (4) Edited Voxel (Output), (5) Edited 3D (Output).
+            </p>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/non-human_pose_edits/deer.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Video 1. </span>
+                    <span class="x-handwriting" style="font-size: inherit;">Raise the deer's head.</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/non-human_pose_edits/eagle.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Video 2. </span>
+                    <span class="x-handwriting" style="font-size: inherit;">Make the eagle fly.</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/non-human_pose_edits/monkey.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Video 3. </span>
+                    <span class="x-handwriting" style="font-size: inherit;">Raise the monkey's left hand.</span>
+                </div>
+            </div>
+
+            <p class="x-note">
+                <i>Although our 3DEditFormer is trained on human-pose editing data, it can generalize naturally to non-human pose editing.</i>
+            </p>
+            
+
+            <!-- Deformation-like Editing -->
+            <div class="x-section-title"><div class="x-gradient-font">3DEditFormer <span style="font-size: 40px; font-weight:600;">|</span> Deformation-like Editing</div></div>
+
+            <p>
+                * From left to right: (1) Source Voxel (Input), (2) Source 3D (Input), (3) Target Image (Input), (4) Edited Voxel (Output), (5) Edited 3D (Output).
+            </p>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/deformation_like_edits/dog.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Video 4. </span>
+                    <span class="x-handwriting" style="font-size: inherit;">Make the dog's limbs shorter and its body plumper.</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/deformation_like_edits/tree.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Video 5. </span>
+                    <span class="x-handwriting" style="font-size: inherit;">Make the tree grows straight.</span>
+                </div>
+            </div>
+
+            <p class="x-note">
+                <i>Our 3DEditFormer can produce coherent structural adaptations for deformation-like edits, indicating that the model is not limited to part manipulation but can also accommodate smooth geometric transformations.</i>
+            </p>
+            
+            <!-- Real-Object Editing -->
+            <div class="x-section-title"><div class="x-gradient-font">3DEditFormer <span style="font-size: 40px; font-weight:600;">|</span> Real-Object Editing</div></div>
+            
+            <p>
+                * From left to right: (1) Source Voxel (Input), (2) Source 3D (Input), (3) Target Image (Input), (4) Edited Voxel (Output), (5) Edited 3D (Output).
+            </p>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/real_object_edits/GSO_BATHROOM_CLASSIC_1.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Video 6. </span>
+                    <span class="x-handwriting" style="font-size: inherit;">Replace the bathtub with a sink.</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/real_object_edits/PartObjaverse-Tiny_0c4e4a0b2a374553ae762bb33e8dd2d0_2.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Video 7. </span>
+                    <span class="x-handwriting" style="font-size: inherit;">Replace the ice cream with a watermelon base.</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/real_object_edits/PartObjaverse-Tiny_7fa9a73e4fc4477d82c8d3dadeb72c65_2.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Video 8. </span>
+                    <span class="x-handwriting" style="font-size: inherit;">Replace the crab with an octopus.</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/real_object_edits/PartObjaverse-Tiny_9e7856dd34ae444a934499782c5bd606_2.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Video 9. </span>
+                    <span class="x-handwriting" style="font-size: inherit;">Replace the arm with human hand holding a gun.</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/real_object_edits/PartObjaverse-Tiny_9338271b6aea4de89bbe37d7bc0abcfe_1.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Video 10. </span>
+                    <span class="x-handwriting" style="font-size: inherit;">Replace the sci-fi turret with a dragon head.</span>
+                </div>
+            </div>
+
+            <p class="x-note">
+                <i>Our 3DEditFormer can generalize well to real-object editing.</i>
+            </p>
+
             <p >
                 The website template is borrowed from <a href="https://github.com/microsoft/TRELLIS/tree/website">TRELLIS</a>.
             </p>
