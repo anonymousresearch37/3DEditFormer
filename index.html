@@ -30,7 +30,222 @@
             <div id="abstract" class="x-gradient-block">
                 3D editing—the task of locally modifying the geometry or appearance of a 3D asset—has wide applications in immersive content creation, digital entertainment, and AR/VR. However, unlike 2D editing, it remains challenging due to the need for cross-view consistency, structural fidelity, and fine-grained controllability. Existing approaches are often slow, prone to geometric distortions, or dependent on manual and accurate 3D masks that are error-prone and impractical.  To address these challenges, we advance both the data and model fronts. On the data side, we introduce <strong>3DEditVerse</strong>, the largest paired 3D editing benchmark to date, comprising 116,309 high-quality training pairs and 1,500 curated test pairs. Built through complementary pipelines of pose-driven geometric edits, foundation model-guided appearance edits, and human validation, 3DEditVerse ensures edit locality, multi-view consistency, and semantic alignment.  On the model side, we propose <strong>3DEditFormer</strong>, a 3D-structure-preserving conditional transformer. By enhancing image-to-3D generation with dual-guidance attention and time-adaptive gating, 3DEditFormer disentangles editable regions from preserved structure, enabling precise and consistent edits without requiring auxiliary 3D masks.  Extensive experiments demonstrate that our framework outperforms state-of-the-art baselines both quantitatively and qualitatively, establishing a new standard for practical and scalable 3D editing. Dataset and code will be released.
             </div>
+            
+            <!-- Real-World Scanned Assets Editing -->
+            <div class="x-section-title"><div class="x-gradient-font">3DEditFormer <span style="font-size: 40px; font-weight:600;">|</span> Real-World Scanned Assets Editing</div></div>
 
+            <p>
+                * From left to right: (1) Source Voxel (Input), (2) Source 3D (Input), (3) Target Image (Input), (4) Edited Voxel (Output), (5) Edited 3D (Output).
+            </p>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/omini_object_3d/asparagus_00_edit_1.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Editing prompt:</span>
+                    <span class="x-handwriting" style="font-size: inherit;">Add a thick, branched crown of florets extending from the top of the asparagus spear.</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/omini_object_3d/backpack_004_edit_2.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Editing prompt:</span>
+                    <span class="x-handwriting" style="font-size: inherit;">Remove the two brown arm-like protrusions on the sides of the backpack.</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/omini_object_3d/backpack_026_edit_1.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Editing prompt:</span>
+                    <span class="x-handwriting" style="font-size: inherit;">Add a large, rigid rectangular compartment extending from the front of the backpack, flush with its main body.</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/omini_object_3d/biscuit_105_edit_3.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Editing prompt:</span>
+                    <span class="x-handwriting" style="font-size: inherit;">Replace the two red circular eyes with elongated oval indentations oriented horizontally.</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/omini_object_3d/bottle_055_edit_3.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Editing prompt:</span>
+                    <span class="x-handwriting" style="font-size: inherit;">Replace the rounded dome-shaped top with a straight, cylindrical neck extension.</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/omini_object_3d/box_026_edit_1.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Editing prompt:</span>
+                    <span class="x-handwriting" style="font-size: inherit;">Add a pair of sturdy, rectangular side handles protruding horizontally from the middle of the long sides.</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/omini_object_3d/brush_006_edit_3.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Editing prompt:</span>
+                    <span class="x-handwriting" style="font-size: inherit;">Replace the flat rectangular brush head with a rounded, dome-shaped head of equal width.</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/omini_object_3d/chair_012_edit_3.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Editing prompt:</span>
+                    <span class="x-handwriting" style="font-size: inherit;">Replace the curved, continuous backrest with a straight, rectangular panel of the same height.</span>
+                </div>
+            </div>
+
+            <!-- Different View Editing -->
+            <div class="x-section-title"><div class="x-gradient-font">3DEditFormer <span style="font-size: 40px; font-weight:600;">|</span> Different View Editing</div></div>
+
+            <p>
+                * From left to right: (1) Source Image, (2) Source Voxel (Input), (3) Source 3D (Input), (4) Target Image (Input), (5) Edited Voxel (Output), (6) Edited 3D (Output).
+            </p>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/different_view/forklift_18_concat.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; margin-bottom: 10px; color: #444; text-align: center;">
+                    <span>3DEditFormer (Ours)</span>
+                </div>
+                <video 
+                    src="assets_glb/videos/different_view/voxhammer_forklift_18_back.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 45%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; margin-bottom: 10px; color: #444; text-align: center;">
+                    <span>VoxHammer</span>
+                </div>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Editing prompt:</span>
+                    <span class="x-handwriting" style="font-size: inherit;">Add a small, flat bed behind the cab.</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; text-align: center;">
+                <video 
+                    src="assets_glb/videos/different_view/calf_5_concat.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 95%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; margin-bottom: 10px; color: #444; text-align: center;">
+                    <span>3DEditFormer (Ours)</span>
+                </div>
+                <video 
+                    src="assets_glb/videos/different_view/voxhammer_calf_5_back.mp4" 
+                    controls 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 45%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+                </video>
+                <div style="margin-top: 15px; font-size: 18px; margin-bottom: 10px; color: #444; text-align: center;">
+                    <span>VoxHammer</span>
+                </div>
+                <div style="margin-top: 15px; font-size: 18px; color: #444; text-align: center;">
+                    <span>Editing prompt:</span>
+                    <span class="x-handwriting" style="font-size: inherit;">Add a bell to the cow's neck.</span>
+                </div>
+            </div>
+
+            <div class="x-section-title"><div class="x-gradient-font">Comparison between lit and unlit rendering modes</div></div>
+            <div id="teaser">
+                <div style="width: 100%;">
+                    <img src="assets_glb/figs/Rebuttal_Figure_light.jpg" style="width:100%;" />
+                </div>
+            </div>
+            <p class="x-note">
+                <i>Darkened regions appear under physically-based rendering due to the Cycles path-tracing engine (first and third rows).</i>
+                <!-- , while they disappear in unlit mode, showing clean textures and confirming they are not caused by any specific 3D editing method -->
+            </p>
+            
             <div class="x-section-title"><div class="x-gradient-font">3DEditVerse Dataset</div></div>
             <div id="teaser">
                 <div style="width: 100%;"><video autoplay playsinline loop muted src="assets_glb/test_all.mp4"></video></div>
